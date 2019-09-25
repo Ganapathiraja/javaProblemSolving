@@ -46,7 +46,8 @@ public class ThreeDiceRoolAddToTargetProblem {
 		Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();
 
 		boolean isKeyPresent = false;
-
+		int findMe = 10;
+		int total =0;
 		// Iterate over the HashMap
 		while (iterator.hasNext()) {
 
@@ -54,11 +55,18 @@ public class ThreeDiceRoolAddToTargetProblem {
 			Map.Entry<String, Integer> entry = iterator.next();
 
 			// Check if this key is the required key
-			if (6 == entry.getValue()) {
-				isKeyPresent = true;
-				System.out.println(entry.getKey() + " =======> " + entry.getValue());
+			if (findMe >= 3) {
+				if (findMe == entry.getValue()) {
+					isKeyPresent = true;
+					System.out.println(entry.getKey() + " =======> " + entry.getValue());
+					total++;
+				}
+			} else {
+				System.out.println("Not available");
+				break ;
 			}
 		}
+		System.out.println("The findMe is "+findMe+" posibility count is "+total);
 
 	}
 
