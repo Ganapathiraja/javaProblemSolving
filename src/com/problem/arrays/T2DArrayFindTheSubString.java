@@ -1,12 +1,15 @@
 package com.problem.arrays;
 
-import java.util.Arrays;
 
 public class T2DArrayFindTheSubString {
 
 	public static void main(String[] args) {
 
-		int[][] twoDarrayString = { { 'W', 'E', 'L', 'C' }, { 'O', 'M', 'E', 'M' }, { 'A', 'N', 'J', 'O' } };
+		int[][] twoDarrayString = { 
+				{ 'W', 'E', 'L', 'C' }, 
+				{ 'O', 'M', 'E', 'M' },
+				{ 'A', 'N', 'J', 'O' } 
+				};
 
 		int rows = 3;
 		int columns = 4;

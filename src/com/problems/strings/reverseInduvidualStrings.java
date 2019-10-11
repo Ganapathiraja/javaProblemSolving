@@ -3,6 +3,9 @@ package com.problems.strings;
 public class reverseInduvidualStrings {
 	public static void main(String[] args) {
 
+		
+		// reversing the with string
+		
 		String str = "one two three";
 		String[] splitStrings = str.split(" ");
 
